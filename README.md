@@ -29,8 +29,7 @@ b) Herencia
 
 __OPCIÓN CORRECTA: b) Herencia__
 
-Pregunta 4:
-- El tiempo de acceso a un dato en una lista de tipo LinkedList es en el mejor de los casos de:
+4) El tiempo de acceso a un dato en una lista de tipo LinkedList es en el mejor de los casos de:
 
 a) O(n)
 
@@ -38,7 +37,7 @@ b) O(1)
 
 __OPCIÓN CORRECTA: b) O(1)__
 
-5. Un algoritmo de ordenación que implemente el método de inserción se basa en la idea de ir seleccionando el número correspondiente en la lista desordenada que se va a insertar en la posición última de la lista ordenada:
+5) Un algoritmo de ordenación que implemente el método de inserción se basa en la idea de ir seleccionando el número correspondiente en la lista desordenada que se va a insertar en la posición última de la lista ordenada:
 
 a) Verdadero
 
@@ -48,7 +47,7 @@ __OPCIÓN CORRECTA:b) Falso__
 
 ## PREGUNTAS TIPO TEST HOJA 3/17
 
-1. Debemos diseñar un programa para un s i stema de dispositivos portables aplicados  en  telemedicina  que  contienen  una  cantidad  de  memoria  muy l imitada ( 4 KB). Tenemos diferentes alternativ as que hacen diferente uso de la computación y la memoria.
+1) Debemos diseñar un programa para un s i stema de dispositivos portables aplicados  en  telemedicina  que  contienen  una  cantidad  de  memoria  muy l imitada ( 4 KB). Tenemos diferentes alternativ as que hacen diferente uso de la computación y la memoria.
 
 a) La primera de ellas t iene un orden de complejidad computacional O( n) y va a ocupar un espacio S( 1 ).
 
