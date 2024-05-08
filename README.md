@@ -152,3 +152,19 @@ __En este tipo de recursividad, la función se llama a sí misma una vez en cada
 
 __Aquí proporciono el código que cumple con lo requerido y lo que imprime dicho código:__
 ![image](https://github.com/GabriHR/CasoFinalDeLosFinales/assets/146011181/adf22536-de1f-44c3-95f9-10dd698b915e)
+
+
+## EJERCICIO 2) EJERCICIOS DE CÓDIGO
+
+d) Responda a las siguiente preguntas:
+• ¿Deberá modificar los atributos timeline y tweets de la clase UserAccount (definida en el
+ejercicio 1) para que contenga elementos de la clase hija Retweet? Justifique su
+razonamiento y, si cree que hay que modificarlos, explique también cómo lo haría.
+
+__SOLUCIÓN: Si los retweets son considerados como una forma especial de tweet, puedes simplemente agregarlos a la lista de tweets existente en la clase UserAccount. Esto evita la necesidad de modificar los atributos timeline y tweets, ya que los retweets serían tratados como objetos de la clase Retweet y se agregarían a la lista de tweets sin problemas. No sería necesario tener una lista separada para los retweets a menos que tengan propiedades significativamente diferentes a los tweets normales.__
+
+• ¿Deberá modificar el método tweet(Tweet tweet1) de la clase UserAccount (definida en el
+ejercicio 1) para que pueda enviar también objetos de tipo Retweet? Justifique su
+razonamiento y, si cree que hay que modificarlo, explique también cómo lo haría.
+
+__SOLUCIÓN:__
