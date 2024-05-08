@@ -124,3 +124,9 @@ Avanza al siguiente elemento y repite los pasos 2-3 hasta que toda la lista est�
 - A = 1024 n
 - B = 16 n 3
 Calcular a partir de qué tamaño de entrada n A es más eficiente que B.
+
+__SOLUCIÓN:__
+- __Para determinar a partir de qué tamaño de entrada n la función A es más eficiente que B, necesitamos encontrar el valor de n para el cual A(n) < B(n).__ 
+- __Esto se puede hacer resolviendo la desigualdad 1024n < 16n^3.__
+- __Dividimos ambos lados de la desigualdad por 16n para simplificarla:  64 < n^2.__
+- __Finalmente, tomamos la raíz cuadrada de ambos lados para resolver para n:  n > sqrt(64)  Por lo tanto, A es más eficiente que B para n > 8.__
