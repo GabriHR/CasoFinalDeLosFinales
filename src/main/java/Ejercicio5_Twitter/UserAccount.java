@@ -10,6 +10,7 @@ public class UserAccount {
     private List<UserAccount> followers;
     private List<UserAccount> following;
     private List<Tweet> timeline;
+    private List<String> activityLog;
 
     public UserAccount(String alias, Email email) {
         this.alias = alias;
@@ -18,6 +19,7 @@ public class UserAccount {
         this.followers = new ArrayList<>();
         this.following = new ArrayList<>();
         this.timeline = new ArrayList<>();
+        this.activityLog = new ArrayList<>();
     }
 
     public void follow(UserAccount user) {
@@ -54,6 +56,15 @@ public class UserAccount {
 
     public List<Tweet> getTimeline() {
         return timeline;
+    }
+
+
+    public List<String> getActivityLog() {
+        return activityLog;
+    }
+
+    public String getAlias() {
+        return alias;
     }
 
     // Getters and setters omitted for brevity
