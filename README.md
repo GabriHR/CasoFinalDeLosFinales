@@ -37,3 +37,13 @@ a) O(n)
 b) O(1)
 
 __OPCIÓN CORRECTA: b) O(1)__
+
+Pregunta 5:
+
+- Un algoritmo de ordenación que implemente el método de inserción se basa en la idea de ir seleccionando el número correspondiente en la lista desordenada que se va a insertar en la posición última de la lista ordenada:
+
+a) Verdadero
+
+b) Falso
+
+__OPCIÓN CORRECTA:b) Falso__
