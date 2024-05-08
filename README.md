@@ -81,7 +81,7 @@ __¿Cuándo conviene utilizar cada una de estas estructuras?__
 - __Use una tabla hash cuando necesite búsquedas rápidas y la inserción y eliminación de datos, y no le importe el orden de los datos.__
 - __Use un árbol cuando necesite mantener los datos ordenados y realizar operaciones de búsqueda eficientes, y no le importe el uso adicional de memoria y la complejidad de las operaciones de inserción y eliminación.__
   
-## PREGUNTAS TIPO TEST HOJA 5/17
+## PREGUNTAS DE DEASARROLLO HOJA 5/17
 
 3)  Explica las diferencias entre un a pila y una cola. ¿ Cuándo conviene utilizar cada una de estas estructuras? ¿ Cuál es el orden de complejidad computacional de estas estructuras? No redacte el orden tal y como puede ver en los apuntes, razónelo con sus propias palabras y argumentos.
 
@@ -96,7 +96,7 @@ __¿Cuándo conviene utilizar cada una de estas estructuras?__
 __¿Cuál es el orden de complejidad computacional de estas estructuras?__
 __Para ambas estructuras, las operaciones de agregar y eliminar elementos son de tiempo constante (O(1)), ya que no dependen del número de elementos en la estructura. Sin embargo, la operación de búsqueda (encontrar un elemento específico) es de tiempo lineal (O(n)), ya que en el peor de los casos, puede requerir recorrer todos los elementos de la estructura.__
 
-## PREGUNTAS TIPO TEST HOJA 6/17
+## PREGUNTAS DE DESARROLLO HOJA 6/17
 
 4)  Explica el método de ordenación denominado inserción y describe las iteraciones sobre el siguiente conjunto de datos: 50 20 84 13 22 16 89 85
 
@@ -118,7 +118,7 @@ Avanza al siguiente elemento y repite los pasos 2-3 hasta que toda la lista est�
 - __Séptima iteración: 13 16 20 22 50 84 85 89 (85 es menor que 89, se mueve a la posición correcta)__
 - __Finalmente, obtenemos el conjunto de datos ordenado: 13 16 20 22 50 84 85 89__
   
-## PREGUNTAS TIPO TEST HOJA 7/17
+## PREGUNTAS DE DESARROLLO HOJA 7/17
 
 5) Dadas dos funciones y su número de operaciones:
 - A = 1024 n
