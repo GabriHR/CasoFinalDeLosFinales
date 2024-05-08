@@ -1,11 +1,12 @@
 package Ejercicio5_Twitter;
 
+import java.time.LocalDate;
+
 public class DirectMessage extends Tweet {
     private UserAccount receiver;
 
-    public DirectMessage(String message, UserAccount sender, UserAccount receiver) {
-        super(message);
-        setSender(sender);
+    public DirectMessage(LocalDate date, String message, UserAccount sender, UserAccount receiver) {
+        super(date, message, sender);
         this.receiver = receiver;
     }
 
