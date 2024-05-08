@@ -38,9 +38,7 @@ b) O(1)
 
 __OPCIÓN CORRECTA: b) O(1)__
 
-Pregunta 5:
-
-- Un algoritmo de ordenación que implemente el método de inserción se basa en la idea de ir seleccionando el número correspondiente en la lista desordenada que se va a insertar en la posición última de la lista ordenada:
+5. Un algoritmo de ordenación que implemente el método de inserción se basa en la idea de ir seleccionando el número correspondiente en la lista desordenada que se va a insertar en la posición última de la lista ordenada:
 
 a) Verdadero
 
@@ -50,8 +48,7 @@ __OPCIÓN CORRECTA:b) Falso__
 
 ## PREGUNTAS TIPO TEST HOJA 3/17
 
-Pregunta 1:
-- Debemos diseñar un programa para un s i stema de dispositivos portables aplicados  en  telemedicina  que  contienen  una  cantidad  de  memoria  muy l imitada ( 4 KB). Tenemos diferentes alternativ as que hacen diferente uso de la computación y la memoria.
+1. Debemos diseñar un programa para un s i stema de dispositivos portables aplicados  en  telemedicina  que  contienen  una  cantidad  de  memoria  muy l imitada ( 4 KB). Tenemos diferentes alternativ as que hacen diferente uso de la computación y la memoria.
 
 a) La primera de ellas t iene un orden de complejidad computacional O( n) y va a ocupar un espacio S( 1 ).
 
@@ -62,3 +59,6 @@ c) La tercera y última t iene una complejidad computacional de O( log 2 ( N)) y
 __OPCIÓN CORRECTA: c) La tercera y última t iene una complejidad computacional de O( log 2 ( N)) y ocupa un poco más de espacio en memoria S( O( log 2 ( N))). 
 Debido a que tenemos una limitación de memoria y el tamaño de los datos de entrada es relativamente grande (64 KB), la opción correcta sería la opción c). Esta opción ofrece un uso de la memoria más eficientes, lo cual es fundamental para nuestro sistema de dispositivos portables aplicados en telemedicina (con memoria limitada).__
 
+## PREGUNTAS DE DESARROLLO HOJA 4/17
+
+P
