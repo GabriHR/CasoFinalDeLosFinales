@@ -96,20 +96,20 @@ __Para ambas estructuras, las operaciones de agregar y eliminar elementos son de
 
 4)  Explica el método de ordenación denominado inserción y describe las iteraciones sobre el siguiente conjunto de datos: 50 20 84 13 22 16 89 85
 
-SOLUCIÓN:
-- El método de ordenación por inserción es un algoritmo simple que funciona de la misma manera que ordenarías las cartas en tu mano durante un juego de cartas.
-- Aquí está el procedimiento paso a paso:  
+__SOLUCIÓN:__
+- __El método de ordenación por inserción es un algoritmo simple que funciona de la misma manera que ordenarías las cartas en tu mano durante un juego de cartas.__
+- __Aquí está el procedimiento paso a paso:  
 Comenzando desde el segundo elemento (índice 1), compara el elemento actual con su elemento anterior.
 Si el elemento actual es menor que su elemento anterior, compáralo con los elementos antes de este. Mueve el mayor elemento hacia la derecha para hacer espacio para el elemento desplazado.
 Repite el paso 2 hasta que el elemento actual sea mayor que el elemento anterior.
-Avanza al siguiente elemento y repite los pasos 2-3 hasta que toda la lista esté ordenada.
+Avanza al siguiente elemento y repite los pasos 2-3 hasta que toda la lista esté ordenada.__
 
-- Ahora, apliquemos el método de ordenación por inserción al conjunto de datos dado:  Conjunto de datos inicial: 50 20 84 13 22 16 89 85  
-Primera iteración: 20 50 84 13 22 16 89 85 (20 es menor que 50, se intercambian)
-Segunda iteración: 20 50 84 13 22 16 89 85 (84 es mayor que 50, no se hace nada)
-Tercera iteración: 13 20 50 84 22 16 89 85 (13 es menor que 84, se mueve a la posición correcta)
-Cuarta iteración: 13 20 22 50 84 16 89 85 (22 es menor que 84, se mueve a la posición correcta)
-Quinta iteración: 13 16 20 22 50 84 89 85 (16 es menor que 84, se mueve a la posición correcta)
-Sexta iteración: 13 16 20 22 50 84 89 85 (89 es mayor que 84, no se hace nada)
-Séptima iteración: 13 16 20 22 50 84 85 89 (85 es menor que 89, se mueve a la posición correcta)
-Finalmente, obtenemos el conjunto de datos ordenado: 13 16 20 22 50 84 85 89
+- __Ahora, apliquemos el método de ordenación por inserción al conjunto de datos dado:  Conjunto de datos inicial: 50 20 84 13 22 16 89 85__  
+- __Primera iteración: 20 50 84 13 22 16 89 85 (20 es menor que 50, se intercambian)__
+- __Segunda iteración: 20 50 84 13 22 16 89 85 (84 es mayor que 50, no se hace nada)__
+- __Tercera iteración: 13 20 50 84 22 16 89 85 (13 es menor que 84, se mueve a la posición correcta)__
+- __Cuarta iteración: 13 20 22 50 84 16 89 85 (22 es menor que 84, se mueve a la posición correcta)__
+- __Quinta iteración: 13 16 20 22 50 84 89 85 (16 es menor que 84, se mueve a la posición correcta)__
+- __Sexta iteración: 13 16 20 22 50 84 89 85 (89 es mayor que 84, no se hace nada)__
+- __Séptima iteración: 13 16 20 22 50 84 85 89 (85 es menor que 89, se mueve a la posición correcta)__
+- __Finalmente, obtenemos el conjunto de datos ordenado: 13 16 20 22 50 84 85 89__
