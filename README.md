@@ -59,5 +59,6 @@ b) La segunda de ellas t iene un orden de complejidad computacional O( 1 ) pero 
 
 c) La tercera y última t iene una complejidad computacional de O( log 2 ( N)) y ocupa un poco más de espacio en memoria S( O( log 2 ( N))).
 
-__OPCIÓN CORRECTA: c) La tercera y última t iene una complejidad computacional de O( log 2 ( N)) y ocupa un poco más de espacio en memoria S( O( log 2 ( N))).__
+__OPCIÓN CORRECTA: c) La tercera y última t iene una complejidad computacional de O( log 2 ( N)) y ocupa un poco más de espacio en memoria S( O( log 2 ( N))). 
+Debido a que tenemos una limitación de memoria y el tamaño de los datos de entrada es relativamente grande (64 KB), la opción correcta sería la opción c). Esta opción ofrece un uso de la memoria más eficientes, lo cual es fundamental para nuestro sistema de dispositivos portables aplicados en telemedicina (con memoria limitada).__
 
