@@ -97,7 +97,8 @@ __Para ambas estructuras, las operaciones de agregar y eliminar elementos son de
 4)  Explica el método de ordenación denominado inserción y describe las iteraciones sobre el siguiente conjunto de datos: 50 20 84 13 22 16 89 85
 
 SOLUCIÓN:
-- El método de ordenación por inserción es un algoritmo simple que funciona de la misma manera que ordenarías las cartas en tu mano durante un juego de cartas. Aquí está el procedimiento paso a paso:  
+- El método de ordenación por inserción es un algoritmo simple que funciona de la misma manera que ordenarías las cartas en tu mano durante un juego de cartas.
+- Aquí está el procedimiento paso a paso:  
 Comenzando desde el segundo elemento (índice 1), compara el elemento actual con su elemento anterior.
 Si el elemento actual es menor que su elemento anterior, compáralo con los elementos antes de este. Mueve el mayor elemento hacia la derecha para hacer espacio para el elemento desplazado.
 Repite el paso 2 hasta que el elemento actual sea mayor que el elemento anterior.
