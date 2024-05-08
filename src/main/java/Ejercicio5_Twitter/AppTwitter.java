@@ -2,17 +2,20 @@
 
     import javax.swing.*;
     import java.awt.*;
+    import java.util.List;
     import java.awt.event.ActionEvent;
     import java.awt.event.ActionListener;
-    import java.util.Calendar;
-    import java.util.Date;
+    import java.time.LocalDate;
+    import java.util.*;
     import java.util.Timer;
-    import java.util.TimerTask;
 
     public class AppTwitter {
         public static void main(String[] args) {
+            List<UserAccount> allUsers = new ArrayList<>();
             UserAccount user1 = new UserAccount("user1", new Email("user1@example.com"));
             UserAccount user2 = new UserAccount("user2", new Email("user2@example.com"));
+            allUsers.add(user1);
+            allUsers.add(user2);
 
             JTextArea tweetText = new JTextArea();  // Mover la creación del JTextArea fuera del bucle
 
@@ -38,8 +41,11 @@
             followButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    user1.follow(user2);
-                    JOptionPane.showMessageDialog(null, "user1 ahora está siguiendo a user2", "Información", JOptionPane.INFORMATION_MESSAGE);
+                    String usernameToFollow = JOptionPane.showInputDialog("Ingresa el nombre del usuario a seguir:");
+                    UserAccount userToFollow = new UserAccount(usernameToFollow, new Email(usernameToFollow + "@example.com"));
+                    user1.follow(userToFollow);
+                    user1.getActivityLog().add("Ahora está siguiendo a: " + userToFollow.getAlias());
+                    JOptionPane.showMessageDialog(null, "user1 ahora está siguiendo a " + userToFollow.getAlias(), "Información", JOptionPane.INFORMATION_MESSAGE);
                 }
             });
 
@@ -63,8 +69,9 @@
                     postTweetButton.addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            Tweet tweet = new Tweet(tweetText.getText());
+                            Tweet tweet = new Tweet(LocalDate.now(), tweetText.getText(), user1);
                             user1.tweet(tweet);
+                            user1.getActivityLog().add("Publicó un tweet: " + tweetText.getText());
                             JOptionPane.showMessageDialog(null, "user1 ha publicado un tweet", "Información", JOptionPane.INFORMATION_MESSAGE);
                             tweetFrame.dispose();
                         }
@@ -101,11 +108,11 @@
                                     calendar.set(Calendar.MINUTE, (Integer) minuteSpinner.getValue());
 
                                     Date scheduleDate = calendar.getTime();
-                                    Tweet tweet = new Tweet(tweetText.getText());
                                     Timer timer = new Timer();
                                     timer.schedule(new TimerTask() {
                                         @Override
                                         public void run() {
+                                            Tweet tweet = new Tweet(LocalDate.now(), tweetText.getText(), user1);
                                             user1.tweet(tweet);
                                             JOptionPane.showMessageDialog(null, "user1 ha publicado un tweet programado", "Información", JOptionPane.INFORMATION_MESSAGE);
                                         }
@@ -144,11 +151,11 @@
             viewTimelineButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    StringBuilder timeline = new StringBuilder("Timeline de user1:\n");
-                    for (Tweet tweetInTimeline : user1.getTimeline()) {
-                        timeline.append(tweetInTimeline.getText()).append("\n");
+                    StringBuilder activityLog = new StringBuilder("Registro de actividad de user1:\n");
+                    for (String activity : user1.getActivityLog()) {
+                        activityLog.append(activity).append("\n");
                     }
-                    JOptionPane.showMessageDialog(null, timeline.toString(), "Timeline", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, activityLog.toString(), "Registro de actividad", JOptionPane.INFORMATION_MESSAGE);
                 }
             });
 
@@ -177,7 +184,7 @@
                     postDMButton.addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            DirectMessage dm = new DirectMessage(tweetText.getText(), user1, user2);
+                            DirectMessage dm = new DirectMessage(LocalDate.now(), tweetText.getText(), user1, user2);
                             user1.sendDirectMessage(dm);
                             JOptionPane.showMessageDialog(null, "user1 ha enviado un mensaje directo a user2", "Información", JOptionPane.INFORMATION_MESSAGE);
                             dmFrame.dispose();
