@@ -138,7 +138,7 @@ __En el método main, la función recursive se llama con a igual a 1 y b igual a
 
 ## PREGUNTAS DE DESARROLLO HOJA 9/17
 
-4) Calcular de forma recursiva la suma de los dígitos de un número siendo un ejemplo el número 102 -> 1 + 0 + 2 = 3. Recuerde que puede realizar los cambios de tipo que crea necesarios para facilitar la
+4) Calcular de forma recursiva la suma de los dígitos de un número siendo un ejemplo el número 102->1+0+2 3. Recuerde que puede realizar los cambios de tipo que crea necesarios para facilitar la
 resolución:
 ¿Qué tipo de recursividad se está empleando? ¿ Qué complejidad computacional
 tiene el algoritmo?
