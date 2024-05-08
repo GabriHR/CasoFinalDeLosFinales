@@ -28,3 +28,12 @@ a) Abstracción
 b) Herencia
 
 __OPCIÓN CORRECTA: b) Herencia__
+
+Pregunta 4:
+- El tiempo de acceso a un dato en una lista de tipo LinkedList es en el mejor de los casos de:
+
+a) O(n)
+
+b) O(1)
+
+__OPCIÓN CORRECTA: b) O(1)__
