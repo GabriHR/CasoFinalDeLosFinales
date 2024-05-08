@@ -149,3 +149,6 @@ __Para calcular la suma de los dígitos de un número de forma recursiva, se pue
 __En este tipo de recursividad, la función se llama a sí misma una vez en cada paso de la recursión.  El algoritmo para calcular la suma de los dígitos de un número de forma recursiva se puede describir de la siguiente manera:__ 
 - __Si el número es menor que 10, devolver el número (ya que es un solo dígito).__
 - __Si no, calcular el módulo de 10 del número (esto da el último dígito) y sumarlo a la suma de los dígitos del número dividido por 10 (esto elimina el último dígito).__
+
+__Aquí proporciono el código que cumple con lo requerido y lo que imprime dicho código:__
+![image](https://github.com/GabriHR/CasoFinalDeLosFinales/assets/146011181/adf22536-de1f-44c3-95f9-10dd698b915e)
