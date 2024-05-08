@@ -93,3 +93,12 @@ __¿Cuándo conviene utilizar cada una de estas estructuras?__
 - __Use una cola cuando necesite acceso al elemento más antiguo.__
 __¿Cuál es el orden de complejidad computacional de estas estructuras?__
 __Para ambas estructuras, las operaciones de agregar y eliminar elementos son de tiempo constante (O(1)), ya que no dependen del número de elementos en la estructura. Sin embargo, la operación de búsqueda (encontrar un elemento específico) es de tiempo lineal (O(n)), ya que en el peor de los casos, puede requerir recorrer todos los elementos de la estructura.__
+
+4)  Explica el método de ordenación denominado inserción y describe las iteraciones sobre el siguiente conjunto de datos: 50 20 84 13 22 16 89 85
+
+SOLUCIÓN:
+- El método de ordenación por inserción es un algoritmo simple que funciona de la misma manera que ordenarías las cartas en tu mano durante un juego de cartas. Aquí está el procedimiento paso a paso:  
+Comenzando desde el segundo elemento (índice 1), compara el elemento actual con su elemento anterior.
+Si el elemento actual es menor que su elemento anterior, compáralo con los elementos antes de este. Mueve el mayor elemento hacia la derecha para hacer espacio para el elemento desplazado.
+Repite el paso 2 hasta que el elemento actual sea mayor que el elemento anterior.
+Avanza al siguiente elemento y repite los pasos 2-3 hasta que toda la lista esté ordenada.
