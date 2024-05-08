@@ -44,7 +44,7 @@ __OPCIÓN CORRECTA:b) Falso__
 
 ## PREGUNTAS TIPO TEST HOJA 3/17
 
-1) Debemos diseñar un programa para un s i stema de dispositivos portables aplicados  en  telemedicina  que  contienen  una  cantidad  de  memoria  muy l imitada ( 4 KB). Tenemos diferentes alternativ as que hacen diferente uso de la computación y la memoria.
+1) Debemos diseñar un programa para un s i stema de dispositivos portables aplicados  en  telemedicina  que  contienen  una  cantidad  de  memoria  muy limitada ( 4 KB). Tenemos diferentes alternativas que hacen diferente uso de la computación y la memoria.
 
 a) La primera de ellas t iene un orden de complejidad computacional O( n) y va a ocupar un espacio S( 1 ).
 
@@ -96,28 +96,6 @@ __¿Cuándo conviene utilizar cada una de estas estructuras?__
 __¿Cuál es el orden de complejidad computacional de estas estructuras?__
 __Para ambas estructuras, las operaciones de agregar y eliminar elementos son de tiempo constante (O(1)), ya que no dependen del número de elementos en la estructura. Sin embargo, la operación de búsqueda (encontrar un elemento específico) es de tiempo lineal (O(n)), ya que en el peor de los casos, puede requerir recorrer todos los elementos de la estructura.__
 
-## PREGUNTAS DE DESARROLLO HOJA 6/17
-
-4)  Explica el método de ordenación denominado inserción y describe las iteraciones sobre el siguiente conjunto de datos: 50 20 84 13 22 16 89 85
-
-__SOLUCIÓN:__
-- __El método de ordenación por inserción es un algoritmo simple que funciona de la misma manera que ordenarías las cartas en tu mano durante un juego de cartas.__
-- __Aquí está el procedimiento paso a paso:  
-Comenzando desde el segundo elemento (índice 1), compara el elemento actual con su elemento anterior.
-Si el elemento actual es menor que su elemento anterior, compáralo con los elementos antes de este. Mueve el mayor elemento hacia la derecha para hacer espacio para el elemento desplazado.
-Repite el paso 2 hasta que el elemento actual sea mayor que el elemento anterior.
-Avanza al siguiente elemento y repite los pasos 2-3 hasta que toda la lista esté ordenada.__
-
-- __Ahora, apliquemos el método de ordenación por inserción al conjunto de datos dado:  Conjunto de datos inicial: 50 20 84 13 22 16 89 85__  
-- __Primera iteración: 20 50 84 13 22 16 89 85 (20 es menor que 50, se intercambian)__
-- __Segunda iteración: 20 50 84 13 22 16 89 85 (84 es mayor que 50, no se hace nada)__
-- __Tercera iteración: 13 20 50 84 22 16 89 85 (13 es menor que 84, se mueve a la posición correcta)__
-- __Cuarta iteración: 13 20 22 50 84 16 89 85 (22 es menor que 84, se mueve a la posición correcta)__
-- __Quinta iteración: 13 16 20 22 50 84 89 85 (16 es menor que 84, se mueve a la posición correcta)__
-- __Sexta iteración: 13 16 20 22 50 84 89 85 (89 es mayor que 84, no se hace nada)__
-- __Séptima iteración: 13 16 20 22 50 84 85 89 (85 es menor que 89, se mueve a la posición correcta)__
-- __Finalmente, obtenemos el conjunto de datos ordenado: 13 16 20 22 50 84 85 89__
-  
 ## PREGUNTAS DE DESARROLLO HOJA 7/17
 
 5) Dadas dos funciones y su número de operaciones:
@@ -130,3 +108,30 @@ __SOLUCIÓN:__
 - __Esto se puede hacer resolviendo la desigualdad 1024n < 16n^3.__
 - __Dividimos ambos lados de la desigualdad por 16n para simplificarla:  64 < n^2.__
 - __Finalmente, tomamos la raíz cuadrada de ambos lados para resolver para n:  n > sqrt(64)  Por lo tanto, A es más eficiente que B para n > 8.__
+
+## PREGUNTAS DE DESARROLLO HOJA 8/17
+
+3) Dado el siguiente algoritmo recursivo:
+
+![image](https://github.com/GabriHR/CasoFinalDeLosFinales/assets/146011181/a53d4627-0136-4caf-b476-1e3ad1ad9302)
+
+Preguntas:
+a) ¿Qué imprime el código? En caso de que no compile indique el motivo y arregle el programa
+como considere conveniente. Explique su solución de manera concisa.
+b) Explica brevemente qué cálculo está haciendo y qué tipo de recursividad está empleando.
+
+__SOLUCIÓN:__
+__El código que proporcionaste compilará y se ejecutará correctamente. Sin embargo, el resultado puede no ser el esperado.  La función recursive parece estar implementando una operación de potencia (a^b), pero hay un problema con la forma en que se manejan los exponentes negativos. En matemáticas, cualquier número (excepto cero) elevado a la potencia de -n es igual a 1 dividido por ese número elevado a la potencia de n. Pero en tu implementación, simplemente estás multiplicando a por sí mismo b veces, lo que no dará el resultado correcto para exponentes negativos.  Además, estás intentando imprimir el resultado como un int, pero cualquier número (excepto cero) elevado a la potencia de -n dará como resultado un número decimal. En tu caso, 1 elevado a la potencia de -2 debería dar como resultado 0.25, pero como estás intentando imprimir el resultado como un int, se truncará a 0.__
+
+__Para corregir este error el codigo se podría modificar para que maneje exponentes negativos correctamente y que devuelva un double para permitir resultados decimales.__
+__Aquí está el código con dicho error solucionado. El código imprimirá 1, ya que 1 elevado a -2 tiene como resultado 1.__
+
+![image](https://github.com/GabriHR/CasoFinalDeLosFinales/assets/146011181/25847f2f-4f2e-49cd-9094-31d7384b71d7)
+
+__¿Qué cáculo está haciendo el código y que tipo de recursividad está utilizando?__
+__El código proporcionado está calculando la potencia de un número utilizando recursividad. La función recursive toma dos argumentos: la base a y el exponente b.  La recursividad que se utiliza es la recursividad lineal. En este tipo de recursividad, la función se llama a sí misma una vez en cada paso de la recursión.  El cálculo se realiza de la siguiente manera:__
+- __Si el exponente b es 0, la función devuelve 1. Esto se debe a que cualquier número elevado a la potencia de 0 es 1.__
+- __Si la base a es 0, la función devuelve 0. Esto se debe a que 0 elevado a cualquier potencia es 0.__
+- __Si el exponente b es negativo, la función devuelve el recíproco de a multiplicado por la función recursive llamada con a y -b - 1 como argumentos. Esto se debe a que un número elevado a una potencia negativa es igual al recíproco del número elevado a esa potencia en positivo.__
+- __Si el exponente b es positivo, la función devuelve a multiplicado por la función recursive llamada con a y b - 1 como argumentos. Esto se debe a que un número elevado a una potencia positiva es igual al número multiplicado por sí mismo esa cantidad de veces.__
+__En el método main, la función recursive se llama con a igual a 1 y b igual a -2. Por lo tanto, el resultado que se imprime es 1, ya que 1 elevado a cualquier potencia es siempre 1.__
