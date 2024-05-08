@@ -80,3 +80,16 @@ __¿Cuándo conviene utilizar cada una de estas estructuras?__
 
 - __Use una tabla hash cuando necesite búsquedas rápidas y la inserción y eliminación de datos, y no le importe el orden de los datos.__
 - __Use un árbol cuando necesite mantener los datos ordenados y realizar operaciones de búsqueda eficientes, y no le importe el uso adicional de memoria y la complejidad de las operaciones de inserción y eliminación.__
+
+3)  Explica las diferencias entre un a pila y una cola. ¿ Cuándo conviene utilizar cada una de estas estructuras? ¿ Cuál es el orden de complejidad computacional de estas estructuras? No redacte el orden tal y como puede ver en los apuntes, razónelo con sus propias palabras y argumentos.
+
+__SOLUCIÓN:__
+- __Pila (Stack):  Una pila es una estructura de datos que sigue el principio de LIFO (Last In, First Out), lo que significa que el último elemento que se agrega a la pila es el primero en ser eliminado. Las operaciones principales que se pueden realizar en una pila son push (para agregar un elemento a la pila) y pop (para eliminar un elemento de la pila).__
+- __Cola (Queue):  Una cola es una estructura de datos que sigue el principio de FIFO (First In, First Out), lo que significa que el primer elemento que se agrega a la cola es el primero en ser eliminado. Las operaciones principales que se pueden realizar en una cola son enqueue (para agregar un elemento al final de la cola) y dequeue (para eliminar un elemento del frente de la cola).__
+
+__¿Cuándo conviene utilizar cada una de estas estructuras?__
+
+- __Use una pila cuando necesite acceso al elemento más recientemente agregado.__
+- __Use una cola cuando necesite acceso al elemento más antiguo.__
+__¿Cuál es el orden de complejidad computacional de estas estructuras?__
+__Para ambas estructuras, las operaciones de agregar y eliminar elementos son de tiempo constante (O(1)), ya que no dependen del número de elementos en la estructura. Sin embargo, la operación de búsqueda (encontrar un elemento específico) es de tiempo lineal (O(n)), ya que en el peor de los casos, puede requerir recorrer todos los elementos de la estructura.__
