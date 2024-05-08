@@ -135,3 +135,17 @@ __El código proporcionado está calculando la potencia de un número utilizando
 - __Si el exponente b es negativo, la función devuelve el recíproco de a multiplicado por la función recursive llamada con a y -b - 1 como argumentos. Esto se debe a que un número elevado a una potencia negativa es igual al recíproco del número elevado a esa potencia en positivo.__
 - __Si el exponente b es positivo, la función devuelve a multiplicado por la función recursive llamada con a y b - 1 como argumentos. Esto se debe a que un número elevado a una potencia positiva es igual al número multiplicado por sí mismo esa cantidad de veces.__
 __En el método main, la función recursive se llama con a igual a 1 y b igual a -2. Por lo tanto, el resultado que se imprime es 1, ya que 1 elevado a cualquier potencia es siempre 1.__
+
+## PREGUNTAS DE DESARROLLO HOJA 9/17
+
+4) Calcular de forma recursiva la suma de los dígitos de un número siendo un ejemplo el número 102 -> 1 + 0 + 2 = 3. Recuerde que puede realizar los cambios de tipo que crea necesarios para facilitar la
+resolución:
+¿Qué tipo de recursividad se está empleando? ¿ Qué complejidad computacional
+tiene el algoritmo?
+
+__SOLUCIÓN:__
+
+__Para calcular la suma de los dígitos de un número de forma recursiva, se puede utilizar la recursividad lineal.__
+__En este tipo de recursividad, la función se llama a sí misma una vez en cada paso de la recursión.  El algoritmo para calcular la suma de los dígitos de un número de forma recursiva se puede describir de la siguiente manera:__ 
+- __Si el número es menor que 10, devolver el número (ya que es un solo dígito).__
+- __Si no, calcular el módulo de 10 del número (esto da el último dígito) y sumarlo a la suma de los dígitos del número dividido por 10 (esto elimina el último dígito).__
