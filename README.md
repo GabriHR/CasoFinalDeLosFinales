@@ -60,6 +60,7 @@ Debido a que tenemos una limitación de memoria y el tamaño de los datos de ent
 2) Explica las diferencias entre una tabla Hash y un árbol. ¿ Cuándo conviene utilizar cada una de estas estructuras? Justifique su respuesta y analice todas las posibles operaciones a realizar por las estructuras. No redacte el orden tal y como puede ver en los apuntes, razónelo con sus propias palabras y argumentos.
 
 __SOLUCIÓN:__
+
 __Ventajas de una tabla Hash:__ 
 - __Acceso, inserción y eliminación de tiempo constante O(1) en el caso promedio.__
 - __Muy eficiente cuando la clave de acceso a los datos es conocida.__
@@ -74,3 +75,8 @@ __Ventajas de un árbol:__
 __Desventajas de un árbol:__
 - __Las operaciones de inserción y eliminación pueden ser complejas ya que pueden requerir el reequilibrio del árbol.__
 - __Utiliza más memoria que las tablas hash ya que necesita almacenar información adicional (como los punteros a nodos hijos).__
+
+__¿Cuándo conviene utilizar cada una de estas estructuras?__
+
+- __Use una tabla hash cuando necesite búsquedas rápidas y la inserción y eliminación de datos, y no le importe el orden de los datos.__
+- __Use un árbol cuando necesite mantener los datos ordenados y realizar operaciones de búsqueda eficientes, y no le importe el uso adicional de memoria y la complejidad de las operaciones de inserción y eliminación.__
