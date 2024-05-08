@@ -19,3 +19,12 @@ a) Verdadero
 b) Falso
 
 __OPCIÓN CORRECTA: b) Falso__
+
+Pregunta 3:
+- ¿Cuál de las siguientes características de la programación orientada a objetos está relacionada con la reutilización de código?
+
+a) Abstracción
+
+b) Herencia
+
+__OPCIÓN CORRECTA: b) Herencia__
